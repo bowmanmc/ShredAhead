@@ -12,9 +12,11 @@
 		4C1F474C209FCC6300003F8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F474A209FCC6300003F8F /* Main.storyboard */; };
 		4C1F474E209FCC6400003F8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F474D209FCC6400003F8F /* Assets.xcassets */; };
 		4C1F4751209FCC6400003F8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F474F209FCC6400003F8F /* LaunchScreen.storyboard */; };
+		577A879673E0C3FF860CAA16 /* Pods_ShredAhead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39361D376243A20FBDE926 /* Pods_ShredAhead.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E39361D376243A20FBDE926 /* Pods_ShredAhead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShredAhead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1F4743209FCC6300003F8F /* ShredAhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShredAhead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1F4746209FCC6300003F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C1F4748209FCC6300003F8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4C1F474D209FCC6400003F8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1F4750209FCC6400003F8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1F4752209FCC6400003F8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B20BFCF22D792A0DA0648D5 /* Pods-ShredAhead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShredAhead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShredAhead/Pods-ShredAhead.debug.xcconfig"; sourceTree = "<group>"; };
+		BBA3E3905A78E1A93FC8B389 /* Pods-ShredAhead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShredAhead.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShredAhead/Pods-ShredAhead.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577A879673E0C3FF860CAA16 /* Pods_ShredAhead.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4C1F4745209FCC6300003F8F /* ShredAhead */,
 				4C1F4744209FCC6300003F8F /* Products */,
+				E3EC7C28730C0CDB914D9537 /* Pods */,
+				6C8C2C44BC8B21B9FF6ECF85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ShredAhead;
 			sourceTree = "<group>";
 		};
+		6C8C2C44BC8B21B9FF6ECF85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E39361D376243A20FBDE926 /* Pods_ShredAhead.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3EC7C28730C0CDB914D9537 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B20BFCF22D792A0DA0648D5 /* Pods-ShredAhead.debug.xcconfig */,
+				BBA3E3905A78E1A93FC8B389 /* Pods-ShredAhead.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C1F4755209FCC6400003F8F /* Build configuration list for PBXNativeTarget "ShredAhead" */;
 			buildPhases = (
+				0F70BF8253744F6A0042BABD /* [CP] Check Pods Manifest.lock */,
 				4C1F473F209FCC6300003F8F /* Sources */,
 				4C1F4740209FCC6300003F8F /* Frameworks */,
 				4C1F4741209FCC6300003F8F /* Resources */,
+				9964EF3E2C86702C6927E315 /* [CP] Embed Pods Frameworks */,
+				C48AF077F7A5A8DBEB224C5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F70BF8253744F6A0042BABD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShredAhead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9964EF3E2C86702C6927E315 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShredAhead/Pods-ShredAhead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48AF077F7A5A8DBEB224C5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShredAhead/Pods-ShredAhead-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C1F473F209FCC6300003F8F /* Sources */ = {
@@ -278,15 +356,13 @@
 		};
 		4C1F4756209FCC6400003F8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B20BFCF22D792A0DA0648D5 /* Pods-ShredAhead.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EG7ANX4UEW;
+				DEVELOPMENT_TEAM = 3S2BQ996P8;
 				INFOPLIST_FILE = ShredAhead/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hdbs.ShredAhead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +372,13 @@
 		};
 		4C1F4757209FCC6400003F8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA3E3905A78E1A93FC8B389 /* Pods-ShredAhead.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EG7ANX4UEW;
+				DEVELOPMENT_TEAM = 3S2BQ996P8;
 				INFOPLIST_FILE = ShredAhead/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hdbs.ShredAhead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
