@@ -6,6 +6,6 @@ target 'ShredAhead' do
   use_frameworks!
 
   # Pods for ShredAhead
-  pod 'AudioKit'
+  pod 'AudioKit', '~> 4.0'
 
 end
